@@ -1,17 +1,24 @@
 :root {
-    /* FONT SIZES */
-    --header: 30px;
-    --sub-header: 24px;
-    --body-text: 16px;
+  /* FONT SIZES */
+  --header: 30px;
+  --sub-header: 24px;
+  --body-text: 16px;
 
-    /* COLOR PALETTE */
-    --primary-color: rgb(0, 63, 92);
-    --seconday-color: rgb(47, 75, 124);
-    --accent-color: rgb(0, 181, 173);
-    --background-color: rgb(247, 247, 247);
-    --text-color: rgb(74, 74, 74);
-    --border-color: rgb(211, 211, 211);
-    --positive-color: rgb(40, 167, 69);
-    --warning-color: #e7a336;
-    --error-color: #cf5446;
+  /* COLOR PALETTE */
+  --primary-color: rgb(0, 63, 92);
+  --seconday-color: rgb(47, 75, 124);
+  --accent-color: rgb(0, 181, 173);
+  --container-bg-color: rgb(231, 237, 240);
+  --background-color: rgb(6, 25, 31);
+  --text-color: rgb(74, 74, 74);
+  --border-color: rgb(211, 211, 211);
+  --positive-color: rgb(40, 167, 69);
+  --warning-color: #e7a336;
+  --error-color: #cf5446;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--background-color);
 }

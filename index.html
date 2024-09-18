@@ -1,27 +1,223 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Inventory Management</title>
 
     <!-- ROBOTO GOOGLE FONT  -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,
-    700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,
+    700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet" />
 
     <!-- POPPINS GOOGLE FONT -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0
     ,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,
-    500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet" />
 
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="container">
+      <nav id="side-bar">
+        <button id="dashboard" class="side-bar-btn">
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <g id="compile">
+              <path
+                id="Vector"
+                d="M5 16H9V20H5V16Z"
+                fill="#1C2E45"
+                fill-opacity="0.6" />
+              <path
+                id="Vector_2"
+                d="M10 16H14V20H10V16Z"
+                fill="#1C2E45"
+                fill-opacity="0.6" />
+              <path
+                id="Vector_3"
+                d="M15 16H19V20H15V16Z"
+                fill="#1C2E45"
+                fill-opacity="0.6" />
+              <path
+                id="Vector_4"
+                d="M5 11H9V15H5V11Z"
+                fill="#1C2E45"
+                fill-opacity="0.6" />
+              <path
+                id="Vector_5"
+                d="M5 6H9V10H5V6Z"
+                fill="#1C2E45"
+                fill-opacity="0.6" />
+              <path
+                id="Vector_6"
+                d="M10 11H14V15H10V11Z"
+                fill="#1C2E45"
+                fill-opacity="0.6" />
+              <path
+                id="Vector_7"
+                d="M11 5H15V9H11V5Z"
+                fill="#1C2E45"
+                fill-opacity="0.6" />
+              <path
+                id="Vector_8"
+                d="M15 11H19V15H15V11Z"
+                fill="#1C2E45"
+                fill-opacity="0.6" />
+              <path
+                id="Vector_9"
+                d="M17 4H20V7H17V4Z"
+                fill="#1C2E45"
+                fill-opacity="0.6" />
+            </g>
+          </svg>
+
+          <span class="side-bar-btn">Dashboard</span>
+        </button>
+
+        <button id="inventory" class="side-bar-btn">
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M16 11V7L12 5L8 7V11L4 13V18L8 20L12 18L16 20L20 18V13L16 11ZM12.09 6.12L15 7.56L12.4 8.86L9.49 7.42L12.09 6.12ZM9 7.78L12 9.28V12.88L9 11.38V7.78ZM8 18.88L5 17.38V13.78L8 15.28V18.88ZM8.28 14.88L5.4 13.42L8 12.12L10.88 13.56L8.28 14.88ZM16 18.88L13 17.38V13.78L16 15.28V18.88ZM16.28 14.88L13.4 13.42L16 12.12L18.88 13.56L16.28 14.88Z"
+              fill="#1C2E45"
+              fill-opacity="0.6" />
+          </svg>
+
+          <span class="side-bar-btn">Inventory</span>
+        </button>
+
+        <button id="orders" class="side-bar-btn">
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <g id="truck">
+              <path
+                id="Vector"
+                d="M10 5H20V12H10V5Z"
+                fill="#1C2E45"
+                fill-opacity="0.6" />
+              <path
+                id="Vector_2"
+                d="M19 16C19 17.105 18.105 18 17 18C15.895 18 15 17.105 15 16C15 14.895 15.895 14 17 14C18.105 14 19 14.895 19 16Z"
+                fill="#1C2E45"
+                fill-opacity="0.6" />
+              <path
+                id="Vector_3"
+                d="M17 13C18.3 13 19.4 13.8 19.8 15H20V13H17Z"
+                fill="#1C2E45"
+                fill-opacity="0.6" />
+              <path
+                id="Vector_4"
+                d="M9 7H5L4 11V15H5.2C5.6 13.8 6.7 13 8 13C9.3 13 10.4 13.8 10.8 15H14.2C14.6 13.8 15.7 13 17 13H9V7ZM8 11H5L5.8 8H8V11Z"
+                fill="#1C2E45"
+                fill-opacity="0.6" />
+              <path
+                id="Vector_5"
+                d="M10 16C10 17.105 9.105 18 8 18C6.895 18 6 17.105 6 16C6 14.895 6.895 14 8 14C9.105 14 10 14.895 10 16Z"
+                fill="#1C2E45"
+                fill-opacity="0.6" />
+            </g>
+          </svg>
+
+          <span class="side-bar-btn">Orders</span>
+        </button>
+
+        <button id="analytics">
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <g id="pie-bar-chart">
+              <g id="Group 27">
+                <path
+                  id="Vector"
+                  d="M9 15H12V20H9V15Z"
+                  fill="#1C2E45"
+                  fill-opacity="0.6" />
+                <path
+                  id="Vector_2"
+                  d="M5 18H8V20H5V18Z"
+                  fill="#1C2E45"
+                  fill-opacity="0.6" />
+                <path
+                  id="Vector_3"
+                  d="M17 16H20V20H17V16Z"
+                  fill="#1C2E45"
+                  fill-opacity="0.6" />
+                <path
+                  id="Vector_4"
+                  d="M13 13H16V20H13V13Z"
+                  fill="#1C2E45"
+                  fill-opacity="0.6" />
+                <path
+                  id="Vector_5"
+                  d="M9 4C6.239 4 4 6.239 4 9C4 11.761 6.239 14 9 14C11.761 14 14 11.761 14 9C14 6.239 11.761 4 9 4ZM9 13C6.791 13 5 11.209 5 9C5 6.791 6.791 5 9 5V9H13C13 11.209 11.209 13 9 13Z"
+                  fill="#1C2E45"
+                  fill-opacity="0.6" />
+              </g>
+            </g>
+          </svg>
+
+          <span class="side-bar-btn">Orders</span>
+        </button>
+
+        <button id="settings" class="side-bar-btn">
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <g id="cogs">
+              <path
+                id="Vector"
+                d="M16 11V9L14.8 8.6C14.7 8.3 14.6 7.9 14.4 7.6L15 6.4L13.5 5.1L12.4 5.6C12.1 5.4 11.8 5.3 11.4 5.2L11 4H9L8.6 5.2C8.3 5.3 7.9 5.4 7.6 5.6L6.5 5.1L5.1 6.5L5.7 7.7C5.5 8 5.4 8.3 5.3 8.7L4 9V11L5.2 11.4C5.3 11.7 5.4 12.1 5.6 12.4L5.1 13.5L6.5 14.9L7.7 14.3C8 14.5 8.3 14.6 8.7 14.7L9 16H11L11.4 14.8C11.7 14.7 12.1 14.6 12.4 14.4L13.6 15L15 13.6L14.4 12.4C14.6 12.1 14.7 11.8 14.8 11.4L16 11ZM7 10C7 8.3 8.3 7 10 7C11.7 7 13 8.3 13 10C13 11.7 11.7 13 10 13C8.3 13 7 11.7 7 10Z"
+                fill="#1C2E45"
+                fill-opacity="0.6" />
+              <path
+                id="Vector_2"
+                d="M11.5 10C11.5 10.828 10.828 11.5 10 11.5C9.172 11.5 8.5 10.828 8.5 10C8.5 9.172 9.172 8.5 10 8.5C10.828 8.5 11.5 9.172 11.5 10Z"
+                fill="#1C2E45"
+                fill-opacity="0.6" />
+              <path
+                id="Vector_3"
+                d="M20 7V6H19.4C19.4 5.8 19.3 5.6 19.2 5.5L19.6 5.1L18.9 4.4L18.5 4.8C18.3 4.7 18.2 4.6 18 4.6V4H17V4.6C16.8 4.6 16.6 4.7 16.5 4.8L16.1 4.4L15.4 5.1L15.8 5.5C15.7 5.7 15.6 5.8 15.6 6H15V7H15.6C15.6 7.2 15.7 7.4 15.8 7.5L15.4 7.9L16.1 8.6L16.5 8.2C16.7 8.3 16.8 8.4 17 8.4V9H18V8.4C18.2 8.4 18.4 8.3 18.5 8.2L18.9 8.6L19.6 7.9L19.2 7.5C19.3 7.3 19.4 7.2 19.4 7H20ZM17.5 7.5C16.9 7.5 16.5 7.1 16.5 6.5C16.5 5.9 16.9 5.5 17.5 5.5C18.1 5.5 18.5 5.9 18.5 6.5C18.5 7.1 18.1 7.5 17.5 7.5Z"
+                fill="#1C2E45"
+                fill-opacity="0.6" />
+              <path
+                id="Vector_4"
+                d="M19.4 15.8C19.3 15.5 19.2 15.2 19 14.9L19.3 14.3L18.6 13.6L18.1 14C17.8 13.8 17.5 13.7 17.2 13.6L17 13H16L15.8 13.6C15.5 13.7 15.2 13.8 14.9 14L14.3 13.7L13.6 14.4L13.9 15C13.7 15.3 13.6 15.6 13.5 15.9L13 16V17L13.6 17.2C13.7 17.5 13.8 17.8 14 18.1L13.7 18.7L14.4 19.4L15 19.1C15.3 19.3 15.6 19.4 15.9 19.5L16 20H17L17.2 19.4C17.5 19.3 17.8 19.2 18.1 19L18.7 19.3L19.4 18.6L19 18.1C19.2 17.8 19.3 17.5 19.4 17.2L20 17V16L19.4 15.8ZM16.5 18C15.7 18 15 17.3 15 16.5C15 15.7 15.7 15 16.5 15C17.3 15 18 15.7 18 16.5C18 17.3 17.3 18 16.5 18Z"
+                fill="#1C2E45"
+                fill-opacity="0.6" />
+            </g>
+          </svg>
+
+          <span class="side-bar-btn">Orders</span>
+        </button>
+      </nav>
+    </div>
+
     <script src="app.js"></script>
-</body>
+  </body>
 </html>

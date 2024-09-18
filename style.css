@@ -1,0 +1,17 @@
+:root {
+    /* FONT SIZES */
+    --header: 30px;
+    --sub-header: 24px;
+    --body-text: 16px;
+
+    /* COLOR PALETTE */
+    --primary-color: rgb(0, 63, 92);
+    --seconday-color: rgb(47, 75, 124);
+    --accent-color: rgb(0, 181, 173);
+    --background-color: rgb(247, 247, 247);
+    --text-color: rgb(74, 74, 74);
+    --border-color: rgb(211, 211, 211);
+    --positive-color: rgb(40, 167, 69);
+    --warning-color: #e7a336;
+    --error-color: #cf5446;
+}
